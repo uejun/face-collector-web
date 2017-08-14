@@ -1,0 +1,8 @@
+<div align="center">
+    <app-stimulus #stimuluscomp></app-stimulus>
+    <button [class.actionButton]="true"  (click)="takePhoto()" md-raised-button color="primary">Take photo</button>
+    <button [class.actionButton]="true"  (click)="cancel()"  md-raised-button color="primary">Cancel</button>
+    <button [class.actionButton]="true"  (click)="postPhoto()" md-raised-button color="warn" [disabled]="!takePhotoTouched">Upload</button>
+<app-webcam [width]="640"></app-webcam>
+</div>
+

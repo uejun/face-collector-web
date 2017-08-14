@@ -1,0 +1,21 @@
+<header>
+    <md-toolbar color="primary">
+        <span>Okajima Lab Face Collector</span>
+
+        <!-- This fills the remaining space of the current row -->
+        <span class="example-fill-remaining-space"></span>
+        <nav>
+            <span *ngIf="!authService.isAuthenticated()" ><a routerLink="/signup" style="color: white">Singup</a></span>
+            <span *ngIf="!authService.isAuthenticated()" ><a routerLink="/signin" style="color: white;">Login</a></span>
+            <span *ngIf="authService.isAuthenticated()"  (click)="onLogout()" style="cursor: pointer;"><a routerLink="/signin" style="color: white;">Logout</a></span>
+        </nav>
+        <!--<ul>-->
+            <!--<ng-template [ngIf]="!authService.isAuthenticated()">-->
+                <!--<li><a routerLink="/signup">登録</a></li>-->
+                <!--<li><a routerLink="/signin">Login</a></li>-->
+            <!--</ng-template>-->
+            <!--<li><a style="cursor: pointer" (click)="onLogout()" *ngIf="authService.isAuthenticated()">Logout</a></li>-->
+        <!--</ul>-->
+    </md-toolbar>
+
+</header>

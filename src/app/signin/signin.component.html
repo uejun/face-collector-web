@@ -1,0 +1,28 @@
+<md-card align="center" style="width: 60%">
+    <md-card-title>Login</md-card-title>
+    <md-card-content>
+        <form [formGroup]="signinForm" (ngSubmit)="onSubmit()" class="user-form">
+            <table align="center" style="width: 100%">
+                <tr>
+                    <td>
+                        <md-input-container class="input-full-width">
+                            <input mdInput type="email" placeholder="Email" formControlName="email" #email>
+                        </md-input-container>
+                    </td>
+                </tr>
+                <p>
+                    <span *ngIf="!email.pristine && email.errors != null && email.errors['noEmail']" style="text-align: left">Invalid Email</span>
+                </p>
+                <tr>
+                    <td>
+                        <md-input-container class="input-full-width">
+                            <input mdInput type="password" placeholder="Password" formControlName="password" #password>
+                        </md-input-container>
+                    </td>
+                </tr>
+            </table>
+            <span *ngIf="authService.message != null" style="text-align: left;">{{authService.message}}</span>
+            <button md-button type="submit" md-raised-button color="primary" style="margin: auto" [disabled]="!signinForm.valid">Login</button>
+        </form>
+    </md-card-content>
+</md-card>
