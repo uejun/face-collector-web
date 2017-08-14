@@ -14,7 +14,7 @@ export class SignupComponent implements OnInit {
 
     signupForm: FormGroup;
 
-    constructor(private formBuilder: FormBuilder, private authService: AuthService) {
+    constructor(private formBuilder: FormBuilder, public authService: AuthService) {
         // this.user = afAuth.authState;
 
     }

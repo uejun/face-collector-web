@@ -62,7 +62,7 @@
                     </td>
                 </tr>
 
-                <span *ngIf="!confirmPassword.pristine && confirmPassword.errors != null && confirm_password.errors['passwordsNotMatch']" style="text-align: left;">Not match password.</span>
+                <span *ngIf="!confirmPassword.pristine && confirmPassword.errors != null && confirmPassword.errors['passwordsNotMatch']" style="text-align: left;">Not match password.</span>
             </table>
             <span *ngIf="authService.message != null" style="text-align: left;">{{authService.message}}</span>
             <button md-button type="submit" md-raised-button color="primary" style="margin: auto" [disabled]="!signupForm.valid">Sign Up</button>

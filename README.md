@@ -36,3 +36,16 @@ $ npm install --save @angular/material @angular/cdk
 $ npm install firebase angularfire2 --save
 ```
 
+## デプロイ
+参照
+https://github.com/angular-buch/angular-cli-ghpages
+```
+$ npm i -g angular-cli-ghpages
+$ mkdir dist
+$ git commit
+$ git push
+$ ng build --prod --base-href "https://uejun.github.io/face-collector-web/"
+$ angular-cli-ghpages
+```
+アクセス
+https://uejun.github.io/face-collector-web/

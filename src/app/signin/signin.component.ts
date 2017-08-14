@@ -11,7 +11,7 @@ export class SigninComponent implements OnInit {
 
     signinForm: FormGroup;
 
-    constructor(private formBuilder: FormBuilder, private authService: AuthService) {
+    constructor(private formBuilder: FormBuilder, public authService: AuthService) {
         // this.user = afAuth.authState;
     }
 

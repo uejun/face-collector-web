@@ -20,7 +20,7 @@ export class WorkComponent implements OnInit {
 
     private _uid = '';
 
-    private takePhotoTouched = false;
+    takePhotoTouched = false;
 
     constructor(private photoService: PhotoService, private authService: AuthService, private router: Router) { }
 

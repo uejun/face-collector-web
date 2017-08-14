@@ -11,14 +11,14 @@ import {AuthService} from '../auth/auth.service';
 })
 export class StimulusComponent implements OnInit {
 
-    private stimuli: Stimulus[];
-    private currentStimulus: Stimulus;
-    private _index = 0;
+    stimuli: Stimulus[];
+    currentStimulus: Stimulus;
+    _index = 0;
 
     // 表示用
-    private emotion = '困惑'; // or "ニュートラル"
-    private currentCount = 0;
-    private totalCount = 0;
+    emotion = '困惑'; // or "ニュートラル"
+    currentCount = 0;
+    totalCount = 0;
 
     constructor(private stimulusService: StimulusService, private authService: AuthService) { }
 
