@@ -7,7 +7,7 @@ import {StimulusService} from './stimulus/stimulus.service';
 import {HttpModule} from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-import {MdButtonModule, MdCardModule} from '@angular/material';
+import {MdButtonModule, MdCardModule, MdGridListModule} from '@angular/material';
 import {MdInputModule} from '@angular/material';
 import {MdToolbarModule} from '@angular/material';
 import {MdProgressBarModule} from '@angular/material';
@@ -56,6 +56,7 @@ export const firebaseConfig = {
       MdProgressBarModule,
       BrowserAnimationsModule,
       MdButtonModule,
+      MdGridListModule,
       RouterModule.forRoot([
           {
               path: '',

@@ -1,8 +1,16 @@
 <div align="center">
-    <app-stimulus #stimuluscomp></app-stimulus>
-    <button [class.actionButton]="true"  (click)="takePhoto()" md-raised-button color="primary">Take photo</button>
-    <button [class.actionButton]="true"  (click)="cancel()"  md-raised-button color="primary">Cancel</button>
-    <button [class.actionButton]="true"  (click)="postPhoto()" md-raised-button color="warn" [disabled]="!takePhotoTouched">Upload</button>
-<app-webcam [width]="640"></app-webcam>
+    <md-grid-list cols="4" rowHeight="4:3">
+        <md-grid-tile colspan="1" rowspan="1">
+            <app-stimulus #stimuluscomp></app-stimulus>
+        </md-grid-tile>
+        <md-grid-tile colspan="3" rowspan="2">
+            <app-webcam [width]="640"></app-webcam>
+        </md-grid-tile>
+        <md-grid-tile>
+            <button [class.actionButton]="true"  (click)="takePhoto()" md-raised-button color="primary">Take</button>
+            <button [class.actionButton]="true"  (click)="cancel()"  md-raised-button color="primary">Cancel</button>
+            <button [class.actionButton]="true"  (click)="postPhoto()" md-raised-button color="warn" [disabled]="!takePhotoTouched">Upload</button>
+        </md-grid-tile>
+    </md-grid-list>
 </div>
 
