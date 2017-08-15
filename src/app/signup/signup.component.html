@@ -1,32 +1,6 @@
-<!--<div align="center">-->
-    <!--<md-card style="width: 60%">-->
-        <!--<md-card-content>-->
-            <!--<form [formGroup]="signupForm" (ngSubmit)="onSubmit()">-->
-                <!--<md-input-container>-->
-                    <!--<input mdInput type="text" placeholder="User Name" formControlName="userName" #userName>-->
-                <!--</md-input-container>-->
-                <!--<md-input-container>-->
-                    <!--<input mdInput type="email" placeholder="Email" formControlName="email" #email>-->
-                <!--</md-input-container>-->
-                <!--<span *ngIf="!email.pristine && email.errors != null && email.errors['noEmail']" style="text-align: left">Invalid Email</span>-->
-                <!--<br>-->
-                <!--<md-input-container>-->
-                    <!--<input mdInput type="password" placeholder="Password 6文字" formControlName="password" #password>-->
-                <!--</md-input-container>-->
-                <!--<br>-->
-                <!--<md-input-contaner>-->
-                    <!--<input mdInput type="password" placeholder="Confirm password" formControlName="confirmPassword" #confirmPassword>-->
-                <!--</md-input-contaner>-->
-                <!--<span *ngIf="!confirmPassword.pristine && confirmPassword.errors != null && confirm_password.errors['passwordsNotMatch']" style="text-align: left;">Not match password.</span>-->
-                <!--<br>-->
-                <!--<button type="submit" md-raised-button color="primary" style="margin: auto" [disabled]="!signupForm.valid">Sign Up</button>-->
-            <!--</form>-->
-        <!--</md-card-content>-->
-        <!--<md-progress-bar *ngIf="registering" mode="indeterminate" color="primary"></md-progress-bar>-->
-    <!--</md-card>-->
-<!--</div>-->
-<md-card align="center" style="width: 60%">
-    <md-card-title>SIGNUP</md-card-title>
+<div align="center">
+ <md-card style="width: 60%">
+    <md-card-title>OLab Member Register</md-card-title>
     <md-card-content>
         <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="user-form">
             <table align="center" style="width: 100%">
@@ -69,4 +43,6 @@
         </form>
     </md-card-content>
 </md-card>
+
+</div>
 

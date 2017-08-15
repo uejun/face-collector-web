@@ -5,7 +5,7 @@
         <!-- This fills the remaining space of the current row -->
         <span class="example-fill-remaining-space"></span>
         <nav>
-            <span *ngIf="!authService.isAuthenticated()" ><a routerLink="/signup" style="color: white">Singup</a></span>
+            <span *ngIf="!authService.isAuthenticated()" ><a routerLink="/signup" style="color: white">Register</a></span>
             <span *ngIf="!authService.isAuthenticated()" ><a routerLink="/signin" style="color: white;">Login</a></span>
             <span *ngIf="authService.isAuthenticated()"  (click)="onLogout()" style="cursor: pointer;"><a routerLink="/signin" style="color: white;">Logout</a></span>
         </nav>
