@@ -1,6 +1,6 @@
 <md-card id="videocard" align="center">
+    <md-card-title>現在 {{currentCount}} / {{totalCount}}</md-card-title>
     <md-card-content>
-        <md-card-subtitle>現在 {{currentCount}} / {{totalCount}}</md-card-subtitle>
         <!--<md-card-title style="font-size: 100%;">{{instruction}}</md-card-title>-->
         <img src="{{currentStimulus?.url}}" alt="" [class.stimulus]="true" width="300px" height="300px">
     </md-card-content>

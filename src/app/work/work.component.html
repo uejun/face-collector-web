@@ -7,9 +7,16 @@
             <app-webcam [width]="640"></app-webcam>
         </md-grid-tile>
         <md-grid-tile>
-            <button [class.actionButton]="true"  (click)="takePhoto()" md-raised-button color="primary">Take</button>
-            <button [class.actionButton]="true"  (click)="cancel()"  md-raised-button color="primary">Cancel</button>
-            <button [class.actionButton]="true"  (click)="postPhoto()" md-raised-button color="warn" [disabled]="!takePhotoTouched">Upload</button>
+            <md-card>
+                <md-card-title>
+                    上の顔を真似して撮影し、アップロードしてください
+                </md-card-title>
+                <md-card-content>
+                    <button [class.actionButton]="true"  (click)="takePhoto()" md-raised-button color="primary">Take</button>
+                    <button [class.actionButton]="true"  (click)="cancel()"  md-raised-button color="primary">Cancel</button>
+                    <button [class.actionButton]="true"  (click)="postPhoto()" md-raised-button color="warn" [disabled]="!takePhotoTouched">Upload</button>
+                </md-card-content>
+            </md-card>
         </md-grid-tile>
     </md-grid-list>
 </div>

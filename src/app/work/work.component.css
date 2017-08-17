@@ -1,3 +1,7 @@
 .stimulus {
     /*width: 70%;*/
 }
+
+.block {
+    display: block;
+}
